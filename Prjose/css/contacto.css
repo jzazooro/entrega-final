@@ -1,0 +1,82 @@
+.contactos--mapa{
+
+    width: 100%;
+    min-height:450px;
+}
+
+.container--contactos{
+    padding: 20px;
+    width: 100%;
+    min-height: 500px;
+}
+
+
+.contactos--datos{
+    min-width: 400px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contactos--info{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+.contactos--info__title{
+    margin: 0;
+    font-size: 24px;
+}
+
+.contactos--info>p{
+    margin: 10px 0 0 0 ;
+    font-size: 16px;
+}
+.contactos--formulario{
+    height: 100%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contendor--info__item{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.info__item--icono{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.contactos--formulario__input{
+    background-color: white;
+    padding: 10px;
+    border: 2px solid rgb(3,37,65);
+    border-radius: 5px;
+}
+
+.contactos--formulario__input:focus{
+    outline: none;
+}
+
+.formulario--contactos__btn{
+    background-color: rgb(3,37,65);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+.formulario--contactos__btn:hover{
+    color: white;
+    background-color: #3778F0;
+}

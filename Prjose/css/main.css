@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    display: flex;
+}
+
+.selecionado{
+    border-bottom: 2px solid white;
+}
+.menu-container{
+    background-color: rgb(3,37,65);
+    min-height: 80px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.contendorImg{
+    width: 30%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+}
+.contendorOpciones{
+    width: 70%;
+}
+.contenedorMenu{
+    width: 100%;
+    list-style:none;
+    display: flex;
+    justify-content: space-around;
+}
+.contenedorMenu--item > a{    
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+.contenedorPoster{
+    min-height: 400px;
+}
+
+main{
+    min-height: fit-content;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloSeccion{
+    font-size: 30px;
+}
+
+.contenedorPoster{
+    width: 80%;
+    background-image: url(../images/fondoIndex.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.contenedorPeliculasPosters{
+    padding-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.contenedorPoster>h3{
+    font-size: 32px;
+}
+
+
+.contenedorPoster>p{
+    font-size: 25px;
+}
+
+
+.contenedorActores{
+    padding-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.contenedorActor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3,37,65);
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+}
+
+.contenedorPeliculasPosters > img{
+    border-radius: 5px;
+}
+
+.contenedorCompanies{
+    padding: 20px 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contenedorCompany{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #3778F0;
+}
+.contenedorCompany:hover{
+    background-color: white;
+}
+
+
+
+/* Footer */
+
+.contenedor--footer{
+    padding-top: 20px;
+    width: 100%;
+    min-height: 500px;
+    background-color: rgb(3,37,65);
+    color: white;
+}
+.titulo--footer{
+    font-size: 34px;
+    margin: 0;
+    text-align: center;
+}
+.contendor--empresas__relacionadas{
+    width: 100%;
+    min-height: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid gray;
+}
+
+
+.contenedor--empresas__logo{
+    width: 145px;
+    height: 46px;
+}
+.empresas__logo{
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+.contenedor--datos__empresa{
+    width: inherit;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-bottom: 1px solid gray;
+}
+
+.redes-sociales{
+    width: 145px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.contendor-red{
+    height: 50px;
+    width: 50px;
+}
+
+.contenedor--pago{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+}
+.redsocial--img{
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+    object-position: center;
+}
+.contenedor--terminos>p{
+    text-align: center;
+}
+
+.img--logo__pago{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center;
+}

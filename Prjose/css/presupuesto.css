@@ -1,0 +1,156 @@
+.formulario{
+    background-color: white;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.tituloPresupuesto{
+    text-align: center;
+}
+.containerDatos{
+    background-color: white;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+
+[class^="containerDatos-item"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+[class^="containerPresupuesto-item"]{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+
+
+.mensajeError{
+    color: red;
+    font-size: 11px;
+}
+.containerPresupuesto{
+    background-color: white;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-top: 1px black solid;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+.tituloPresupuesto{
+    margin: 0;
+}
+
+.containerPresupuesto_producto{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tituloPresupuestoExtra{
+    margin: 0;
+}
+.containerPresupuesto_plazo{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.containerPresupuesto_extras{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCheckbox{
+    padding-left: 20px;
+    font-size: 12px;
+}
+
+
+.containerPresupuesto_presupuesto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+
+#item__presupuesto{
+    color: red;
+    font-weight: 900;
+    text-align: center;
+}
+
+.tituloPresupuestoPrincipal{
+    font-size: 26px;
+    border-bottom: 2px solid black;
+}
+
+.btnEnviar{
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(3,37,65);
+    color: white;
+}
+
+.presupuestoTitulo{
+    text-align: center;
+    font-size: 30px;
+}
+
+
+label,.tituloPresupuestoExtra{
+    color: rgb(3,37,65);
+    font-weight: 900;
+}
+input, #item__producto{
+    padding: 5px;
+    background-color: none;
+    border: none;
+    border-bottom: 2px solid #5E96AB;
+}
+
+#item__plazo, #item__producto{
+    border: 2px solid #5E96AB;
+}
+input:focus{
+    outline: none;
+}
+.hidden{
+    display: none;
+}
+
+@media (min-width: 700px) {
+    [class^="containerDatos-item"]{
+        width: 400px;
+
+    }
+  }

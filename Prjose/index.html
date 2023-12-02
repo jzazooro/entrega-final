@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/icono.svg">
+
+    <title>PELIJOSE</title>
+</head>
+<body>
+    <nav class="menu-container">
+        <div class="contendorImg">
+            PELIJOSE
+        </div>
+        <div class="contendorOpciones">
+            <ul class="contenedorMenu">
+                <li class="contenedorMenu--item selecionado"><a href="./index.html">Inicio</a></li>
+                <li class="contenedorMenu--item"><a href="./views/presupuesto.html">Presupuesto</a></li>
+                <li class="contenedorMenu--item"><a href="./views/galeria.html">Galeria</a></li>
+                <li class="contenedorMenu--item"><a href="./views/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <!-- En algunas secciones se genera el contenido de las peticiones y luego se carga el contenido -->
+    <main>
+        <section class="contenedorPoster">
+            <h3>Bienvenidos.</h3>
+            <p>Millones de películas de televisión y personas por descubrir. Explorar ahora.</p>
+        </section>
+
+        <h3 class="tituloSeccion">Peliculas más vistas</h3>
+        <section class="contenedorPeliculasPosters">
+
+        </section>
+        <h3 class="tituloSeccion">Actores mas importantes</h3>
+        <section class="contenedorActores">
+        </section>
+        <h3 class="tituloSeccion">Compañias</h3>
+        <section class="contenedorCompanies">
+
+        </section>
+    </main>
+
+
+
+    <footer class="contenedor--footer">
+        <h3 class="titulo--footer">Confían en nosotros</h3>
+
+        <div class="contenedor--datos__empresa">
+            <div class="datos__empresa--item">
+                <p><strong>Dirección:</strong>  Prta del Sol, 28002 Madrid</p>
+                <p><strong>Email:</strong> contacto@newsjulian.com</p>
+                <p><strong>Teléfono:</strong> 991 991 123</p>
+                <p><strong>Horario:</strong> Lunes a Viernes</p>
+            </div>
+            <div class="datos__empresa--item">
+                <p><strong>INFORMACIÓN</strong></p>
+                <p>Blog de noticias</p>
+                <p>Proceso de Compra</p>
+                <p>Tipos de envío</p>
+                <p>Devoluciones</p>
+                <p>Términos y condiciones</p>
+                <p>Política de privacidad</p>
+            </div>
+            <div class="datos__empresa--item ocultar">
+                <p><strong>AYUDA</strong></p>
+                <p>Especialistas en noticias</p>
+                <p>Asesoramiento de investigación</p>
+                <p>Contacto</p>
+                <p>Opiniones</p>
+            </div>
+
+            <div class="datos__empresa--item ocultar">
+                <p><strong>SÍGUENOS</strong></p>
+                <div class="redes-sociales">
+                    <div class="contendor-red">
+                        <a href="https://www.facebook.com/"><img class="redsocial--img" src="./images/facebook.png" alt=""></a>
+                    </div>
+                    <div class="contendor-red">
+                        <a href="https://twitter.com/?lang=es"><img class="redsocial--img" src="./images/twiiter.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="contenedor--pagos">
+                    <img class="img--logo__pago" src="./images/mastercard.png" alt="">
+                    <img class="img--logo__pago" src="./images/paypal.png" alt="">
+                    <img class="img--logo__pago" src="./images/maestro.png" alt="">
+                    <img class="img--logo__pago" src="./images/visa.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="contenedor--terminos">
+            <p>Copyright © 2020  Copyright. Todos los derechos reservados. Términos y condiciones. Política de privacidad.</p>
+        </div>
+    </footer>
+
+    <!-- Importar la libreria AXIOS para facilitar la creacion de peticiones -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js">
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

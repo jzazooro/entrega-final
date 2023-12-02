@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        </style>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="shortcut icon" href="../images/icono.svg">
+
+    <title>PELIJULIAN</title>
+    
+<body>
+    <nav class="menu-container">
+        <div class="contendorImg">
+            PELIJULIAN
+        </div>
+        <div class="contendorOpciones">
+            <ul class="contenedorMenu">
+                <li class="contenedorMenu--item"><a href="../index.html">Inicio</a></li>
+                <li class="contenedorMenu--item"><a href="./presupuesto.html">Presupuesto</a></li>
+                <li class="contenedorMenu--item selecionado"><a href="./galeria.html">Galeria</a></li>
+                <li class="contenedorMenu--item"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 class="tituloGeleria">Peliculas más vistas</h2>
+    <hr>
+    <p class="subtituloGaleria">Seleccionar la pagina:</p>
+    <div class="cotenedorBtns">
+        <button class="btn1" data-page="1">1</button>
+        <button class="btn2" data-page="2">2</button>
+        <button class="btn3" data-page="3">3</button>
+        <button class="btn4" data-page="4">4</button>
+    </div>
+    <hr>
+
+    <div class="galeriaContainer"></div>
+
+
+    <footer class="contenedor--footer">
+        <h3 class="titulo--footer">Confían en nosotros</h3>
+
+        <div class="contenedor--datos__empresa">
+            <div class="datos__empresa--item">
+                <p><strong>Dirección:</strong>  Prta del Sol, 28002 Madrid</p>
+                <p><strong>Email:</strong> contacto@pelisjulian.com</p>
+                <p><strong>Teléfono:</strong> 991 991 123</p>
+                <p><strong>Horario:</strong> Lunes a Viernes</p>
+            </div>
+            <div class="datos__empresa--item">
+                <p><strong>INFORMACIÓN</strong></p>
+                <p>Blog de Peliculas</p>
+                <p>Proceso de Compra</p>
+                <p>Tipos de envío</p>
+                <p>Devoluciones</p>
+                <p>Términos y condiciones</p>
+                <p>Política de privacidad</p>
+            </div>
+            <div class="datos__empresa--item ocultar">
+                <p><strong>AYUDA</strong></p>
+                <p>Especialistas en peliculas</p>
+                <p>Asesoramiento personalizado</p>
+                <p>Servicio Técnico/Postventea</p>
+                <p>Contacto</p>
+                <p>Opiniones</p>
+            </div>
+
+            <div class="datos__empresa--item ocultar">
+                <p><strong>SÍGUENOS</strong></p>
+                <div class="redes-sociales">
+                    <div class="contendor-red">
+                        <a href="https://www.facebook.com/"><img class="redsocial--img" src="../images/facebook.png" alt=""></a>
+                    </div>
+                    <div class="contendor-red">
+                        <a href="https://twitter.com/?lang=es"><img class="redsocial--img" src="../images/twiiter.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="contenedor--pagos">
+                    <img class="img--logo__pago" src="../images/mastercard.png" alt="">
+                    <img class="img--logo__pago" src="../images/paypal.png" alt="">
+                    <img class="img--logo__pago" src="../images/maestro.png" alt="">
+                    <img class="img--logo__pago" src="../images/visa.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="contenedor--terminos">
+            <p>Copyright © 2020 Peliculas Copyright. Todos los derechos reservados. Términos y condiciones. Política de privacidad.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js">
+    </script>
+    <script src="../js/galeria.js"></script>
+</body>
+</html>

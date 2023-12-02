@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/presupuesto.css">
+    <link rel="shortcut icon" href="../images/icono.svg">
+
+    <title>PELIJULIAN</title>
+
+
+</head>
+<body>
+    <nav class="menu-container">
+        <div class="contendorImg">
+            PELIJULIAN
+        </div>
+        <div class="contendorOpciones">
+            <ul class="contenedorMenu">
+                <li class="contenedorMenu--item"><a href="../index.html">Inicio</a></li>
+                <li class="contenedorMenu--item selecionado"><a href="./presupuesto.html">Presupuesto</a></li>
+                <li class="contenedorMenu--item"><a href="./galeria.html">Galeria</a></li>
+                <li class="contenedorMenu--item"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 class="presupuestoTitulo">Formulario de Solicitud</h2>
+    <form class="formulario" action="#" method="GET">
+        <div class="containerDatos">
+            <h3 class="tituloPresupuestoPrincipal">Datos</h3>
+            <div class="containerDatos-item__nombre">
+                <label for="item__nombre">Nombre:</label>
+                <input id="item__nombre" type="text" class="item__nombre"  required>
+                <span class="mensajeError hidden">Sólo podrá contener letras y tendrá una longitud
+                    máxima de 15 caracteres.</span>
+            </div>
+            <div class="containerDatos-item__apellido">
+                <label for="item__apellido">Apellidos:</label>
+                <input id="item__apellido" type="text" class="item__apellido">
+                <span class="mensajeError hidden">Sólo podrá contener letras y tendrá una longitud
+                    máxima de 40 caracteres.</span>
+            </div>
+            <div class="containerDatos-item__telefono">
+                <label for="item__telefono">Teléfono:</label>
+                <input id="item__telefono" type="text" class="item__telefono">
+                <span class="mensajeError hidden">Sólo podrá contener números y
+                    tendrá una longitud máxima de 9 dígitos.</span>
+            </div>
+            <div class="containerDatos-item__email">
+                <label for="item__email">Email:</label>
+                <input id="item__email" type="text" class="item__email">
+                <span class="mensajeError hidden">Deberá cumplir con los estándares de
+                    un correo electrónico. Ejemplo: nnnnn_nnn@zzzzz.xxx</span>
+            </div>
+        </div>
+        
+        <div class="containerPresupuesto">
+            <h3 class="tituloPresupuestoPrincipal">Presupuesto</h3>
+            <div class="containerPresupuesto_producto">
+                <label for="item__producto">Elegir Producto: </label>
+                <select id="item__producto">
+                    <option value="0" selected>Selecciona</option>
+                    <option value="10" >Clasico</option>
+                    <option value="15">Reciente</option>
+                    <option value="20">Estreno</option>
+                </select>
+
+            </div>
+            <div class="containerPresupuesto_plazo">
+                <label for="item__plazo">Plazo en meses:</label>
+                <input type="number" id="item__plazo"  min="1" max="6" required/>
+            </div>
+            <p class="tituloPresupuestoExtra">Elegir los extras:</p>
+            <div class="containerPresupuesto_extras">
+                <div class="contenedorCheckbox">
+                    <input type="checkbox" id="item__extras1" name="extras" value="1"> 
+                    <label for="item__extras1">Edicion Plus</label>
+                </div>
+
+                <div class="contenedorCheckbox">
+                    <input type="checkbox" id="item__extras2" name="extras" value="2"> 
+                    <label for="item__extras2">Edicion Premium</label>
+                </div>
+
+                <div class="contenedorCheckbox">
+                    <input type="checkbox" id="item__extras3" name="extras" value="3"> 
+                    <label for="item__extras3">Edicion Especial</label>
+                </div>
+
+            </div>
+            <div class="containerPresupuesto_presupuesto">
+                <label for="item__presupuesto">Presupuesto estimado:</label>
+                <input type="text" id="item__presupuesto" readonly>
+            </div>
+            <h3 class="tituloPresupuesto">Aceptar condiciones y envio de presupuesto:</h3>
+            <div class="containerPresupuesto_condiciones">
+                <label for="item__condiciones">He leído la política de privacidad.</label>
+                <input type="checkbox" id="item__condiciones"> 
+            </div>
+            <button class="btnEnviar" type="submit">Enviar</button>
+
+        </div>
+    </form>
+
+
+    <footer class="contenedor--footer">
+        <h3 class="titulo--footer">Confían en nosotros</h3>
+
+        <div class="contenedor--datos__empresa">
+            <div class="datos__empresa--item">
+                <p><strong>Dirección:</strong>  Prta del Sol, 28002 Madrid</p>
+                <p><strong>Email:</strong> contacto@pelisjulian.com</p>
+                <p><strong>Teléfono:</strong> 991 991 123</p>
+                <p><strong>Horario:</strong> Lunes a Viernes</p>
+            </div>
+            <div class="datos__empresa--item">
+                <p><strong>INFORMACIÓN</strong></p>
+                <p>Blog de Peliculas</p>
+                <p>Proceso de Compra</p>
+                <p>Tipos de envío</p>
+                <p>Devoluciones</p>
+                <p>Términos y condiciones</p>
+                <p>Política de privacidad</p>
+            </div>
+            <div class="datos__empresa--item ocultar">
+                <p><strong>AYUDA</strong></p>
+                <p>Especialistas en pelicuals</p>
+                <p>Asesoramiento personalizado</p>
+                <p>Servicio Técnico/Postventea</p>
+                <p>Contacto</p>
+                <p>Opiniones</p>
+            </div>
+
+            <div class="datos__empresa--item ocultar">
+                <p><strong>SÍGUENOS</strong></p>
+                <div class="redes-sociales">
+                    <div class="contendor-red">
+                        <a href="https://www.facebook.com/"><img class="redsocial--img" src="../images/facebook.png" alt=""></a>
+                    </div>
+                    <div class="contendor-red">
+                        <a href="https://twitter.com/?lang=es"><img class="redsocial--img" src="../images/twiiter.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="contenedor--pagos">
+                    <img class="img--logo__pago" src="../images/mastercard.png" alt="">
+                    <img class="img--logo__pago" src="../images/paypal.png" alt="">
+                    <img class="img--logo__pago" src="../images/maestro.png" alt="">
+                    <img class="img--logo__pago" src="../images/visa.png" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="contenedor--terminos">
+            <p>Copyright © 2020 Peliculas Copyright. Todos los derechos reservados. Términos y condiciones. Política de privacidad.</p>
+        </div>
+    </footer>
+
+
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>
